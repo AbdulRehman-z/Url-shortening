@@ -8,6 +8,7 @@ export const state = {
   msgArr: [],
   apiDataObj: {},
   resultArrCount: [],
+  currSlide: 0,
 };
 
 ///////////////////////////////////////
