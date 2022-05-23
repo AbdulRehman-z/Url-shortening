@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/src/sass/main.scss" />
+    <script defer type="module" src="src/js/controller.js"></script>
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  </head>
+  <body>
+    <section class="section-1">
+      <nav class="nav default">
+        <div class="nav__block-1">
+          <h2 class="nav__logo">Shortly</h2>
+          <div class="nav__links-container">
+            <a href="#shorten-link" class="nav__link">Features</a>
+            <a href="#section--4" class="nav__link">Pricing</a>
+            <a href="#section--5" class="nav__link">Testimonial</a>
+          </div>
+        </div>
+        <div class="nav__block-2">
+          <a href="#section--2" class="nav__link nav__user nav__user--1"
+            >Login</a
+          >
+          <a href="#section--2" class="nav__link btn btn--white btn--animated"
+            >Sign Up</a
+          >
+        </div>
+      </nav>
+      <header class="header default">
+        <div class="left-content">
+          <div class="left-content__text-content">
+            <h1 class="left-content__heading">
+              <span class="modify">More</span> than just shorter links
+            </h1>
+            <p class="left-content__text">
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </p>
+          </div>
+          <a
+            href="#shorten-link"
+            class="btn btn--white btn--animated btn--header"
+            >Get Started</a
+          >
+        </div>
+        <div class="right-content">
+          <svg class="right-content__svg">
+            <img
+              src="src/images/illustration-working.svg"
+              alt=""
+              class="right-content__icon"
+            />
+          </svg>
+        </div>
+      </header>
+    </section>
+
+    <section class="section-2 section">
+      <div class="search-box default">
+        <nav class="search" id="shorten-link">
+          <img
+            src="src/images/bg-shorten-desktop.svg"
+            alt=""
+            class="search__image"
+          />
+
+          <div class="search__shorten-box">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Shorten a link here..."
+            />
+            <button class="search__button-3" role="button">Shorten it!</button>
+          </div>
+
+          <div class="search__error-box"></div>
+        </nav>
+      </div>
+      <div class="result-box default">
+        <!-- <div class="result-box__col">
+          <span class="result-box__original-link"
+            >https://www.frontendmentor.io/home</span
+          >
+          <div class="result-box__right-content">
+            <a href="#" class="result-box__shorten-link">shrtco.de/xk2RLB</a>
+            <button class="result-box__button-3" role="button">Copy</button>
+          </div>
+        </div>
+        <div class="result-box__col">
+          <span class="result-box__original-link"
+            >https://www.frontendmentor.io/home</span
+          >
+          <div class="result-box__right-content">
+            <a href="#" class="result-box__shorten-link">shrtco.de/xk2RLB</a>
+            <button class="result-box__button-3" role="button">Copy</button>
+          </div>
+        </div>
+        <div class="result-box__col">
+          <span class="result-box__original-link"
+            >https://www.frontendmentor.io/home</span
+          >
+          <div class="result-box__right-content">
+            <a href="#" class="result-box__shorten-link">shrtco.de/xk2RLB</a>
+            <button class="result-box__button-3" role="button">Copy</button>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="text-content">
+        <h2 class="text-content__main-heading">Advanced Statistics</h2>
+        <p class="text-content__text">
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+
+        <span class="features-container__border default"></span>
+
+        <div class="features-container default">
+          <!-- <span class="features-container__border"></span> -->
+
+          <!-- <div class="features-container__feature-col"> -->
+          <div class="features-container__box features-container__box--1">
+            <img
+              src="src/images/icon-brand-recognition.svg"
+              alt=""
+              class="features-container__icon"
+            />
+            <div class="features-container__text-content padding">
+              <h2 class="features-container__main-heading">
+                Brand Recognition
+              </h2>
+              <p class="features-container__text">
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+          </div>
+
+          <div class="features-container__box features-container__box--2">
+            <img
+              src="src/images/icon-brand-recognition.svg"
+              alt=""
+              class="features-container__icon"
+            />
+            <div class="features-container__text-content padding">
+              <h2 class="features-container__main-heading">Detailed Records</h2>
+              <p class="features-container__text">
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+          </div>
+
+          <div class="features-container__box features-container__box--3">
+            <img
+              src="src/images/icon-fully-customizable.svg"
+              alt=""
+              class="features-container__icon"
+            />
+            <div class="features-container__text-content padding">
+              <h2 class="features-container__main-heading">
+                Fully Customizable
+              </h2>
+              <p class="features-container__text">
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section-3 section" id="section--2">
+      <div class="content default">
+        <img src="src/images/login.svg" class="content__svg" alt="" />
+        <form class="login">
+          <h2 class="login__main-heading">Sign In</h2>
+          <p class="login__text">Sign up and start shortening!</p>
+          <div class="login__form-input-container">
+            <input
+              type="text"
+              class="login__form-input login__form-input--1"
+              placeholder="Username"
+            />
+            <input
+              type="password"
+              class="login__form-input login__form-input--2"
+              placeholder="Password"
+            />
+          </div>
+          <div class="login__captions-box">
+            <label class="login__checkbox">
+              <input
+                type="checkbox"
+                checked="checked"
+                class="login__indicator"
+              />
+              <span class="login__checkbox-caption">Remember me</span>
+
+              <!-- <div class=></div> -->
+            </label>
+            <span class="login__forgot"
+              ><a href="#" class="login__forgot-pass">Forgot Password</a></span
+            >
+          </div>
+          <button class="login__button-4" role="button">Log In</button>
+          <span class="login__choice-caption">— or login with —</span>
+
+          <div class="login__social-login-container">
+            <a href="#" class="login__social-link login__social-link--1">
+              <svg class="login__social-icon">
+                <use
+                  xlink:href="src/images/sprite.svg#icon-facebook-with-circle"
+                ></use>
+              </svg>
+            </a>
+            <a href="#" class="login__social-link login__social-link--2">
+              <svg class="login__social-icon">
+                <use
+                  xlink:href="src/images/sprite.svg#icon-google-with-circle"
+                ></use>
+              </svg>
+            </a>
+            <a href="#" class="login__social-link login__social-link--3">
+              <svg class="login__social-icon">
+                <use
+                  xlink:href="src/images/sprite.svg#icon-twitter-with-circle"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- <div class="pricingTable"> -->
+
+    <!-- <h2 class="pricingTable__title">Find a plan that's right for you.</h2>
+        <h3 class="pricingTable__subtitle">
+          Every plan comes with a 30-day free trial.
+        </h3>
+      </div> -->
+    <section class="section-4 section" id="section--4">
+      <div class="background">
+        <div class="container default">
+          <div class="panel pricing-table">
+            <div class="pricing-plan">
+              <img
+                src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h2 class="pricing-header">Personal</h2>
+              <span class="pricing-time">Lifetime</span>
+
+              <ul class="pricing-features">
+                <li class="pricing-features-item">Unlimited clicks</li>
+                <li class="pricing-features-item">App integrations</li>
+              </ul>
+              <span class="pricing-price">Free</span>
+              <a href="#/" class="pricing-button">Sign up</a>
+            </div>
+
+            <div class="pricing-plan">
+              <img
+                src="https://s28.postimg.cc/ju5bnc3x9/plane.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h2 class="pricing-header">Small Team</h2>
+              <span class="pricing-time">Monthly</span>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">
+                  Complimentary custom domain*
+                </li>
+                <li class="pricing-features-item">Branded links</li>
+              </ul>
+              <span class="pricing-price">$150</span>
+              <a href="#/" class="pricing-button is-featured">Free trial</a>
+            </div>
+
+            <div class="pricing-plan">
+              <img
+                src="https://s21.postimg.cc/tpm0cge4n/space-ship.png"
+                alt=""
+                class="pricing-img"
+              />
+              <h2 class="pricing-header">Enterprise</h2>
+              <span class="pricing-time">One Year</span>
+              <ul class="pricing-features">
+                <li class="pricing-features-item">
+                  Location and device type data
+                </li>
+                <li class="pricing-features-item">Mobile deep links</li>
+              </ul>
+              <span class="pricing-price">$400</span>
+              <a href="#/" class="pricing-button">Free trial</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-5 section" id="section--5">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          Interested in seeing what our customers are saying? See reviews on
+          Shortly below
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Super Easy to Use URL Shortener!
+            </h5>
+            <blockquote class="testimonial__text">
+              I use Shortly myself and recommend it to my clients who aren't
+              technical but want to track the performance of the links they
+              share on multiple social channels.The ease of which you can use
+              this platform and how it has progressed to being able to segment
+              all of your links and keep them organized.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="src/images/user-1.jpg"
+                alt=""
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Aarav Lynn</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Great for custom, trackable vanity URL's
+            </h5>
+            <blockquote class="testimonial__text">
+              The ability to create custom back-halfs to have truly unique,
+              custom vanity URL's. This helps make our shortened URL's look
+              branded and professional which looks far better than using lengthy
+              URL's that will appear truncated
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="src/images/user-2.jpg"
+                alt=""
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Miyah Miles</h6>
+              <p class="testimonial__location">London, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Perfect for Personal and Professional Use
+            </h5>
+            <blockquote class="testimonial__text">
+              The amazing thing about Shortly is that the free plan more than
+              exceeded my expectations. I was able to comfortably track all my
+              ad campaign links. Bit.ly is easy to use and understand.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="src/images/user-3.jpg"
+                alt=""
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Francisco Gomes</h6>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section-6 section">
+      <img src="src/images/bg-shorten-desktop.svg" alt="" class="CTA__image" />
+      <div class="CTA">
+        <h1 class="CTA__heading">Boost your links today</h1>
+        <button class="CTA__button" role="button">Get Started</button>
+      </div>
+    </section>
+
+    <footer class="section-7 section">
+      <h1 class="logo">Shortly</h1>
+      <div class="heading">
+        <!-- <h1 class="logo">Shortly</h1> -->
+
+        <div class="heading__col">
+          <h2 class="heading__main">Features</h2>
+          <span class="heading__secondary">Link shortening</span
+          ><span class="heading__secondary">Branded links</span
+          ><span class="heading__secondary">Analytics</span>
+        </div>
+        <div class="heading__col">
+          <h2 class="heading__main">Resources</h2>
+          <span class="heading__secondary">Blog</span
+          ><span class="heading__secondary">Developers</span
+          ><span class="heading__secondary">Support</span>
+        </div>
+
+        <div class="heading__col">
+          <h2 class="heading__main">Company</h2>
+          <span class="heading__secondary">About</span
+          ><span class="heading__secondary">Our Team</span
+          ><span class="heading__secondary">Careers</span
+          ><span class="heading__secondary">Contact</span>
+        </div>
+
+        <div class="social-icon-container">
+          <a href="#" class="social-icon-container__social-link">
+            <img
+              src="src/images/icon-facebook.svg"
+              class="social-icon-container__icon"
+              alt=""
+            />
+          </a>
+
+          <a href="#" class="social-icon-container__social-link">
+            <img
+              src="src/images/icon-instagram.svg"
+              class="social-icon-container__icon"
+              alt=""
+            />
+          </a>
+
+          <a href="#" class="social-icon-container__social-link">
+            <img
+              src="src/images/icon-twitter.svg"
+              class="social-icon-container__icon"
+              alt=""
+            />
+          </a>
+
+          <a href="#" class="social-icon-container__social-link">
+            <img
+              src="src/images/icon-pinterest.svg"
+              class="social-icon-container__icon"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+  Features
+  Pricing
+  Resources
+
+  Login
+  Sign Up
+
+  More than just shorter links
+
+  Build your brand’s recognition and get detailed insights 
+  on how your links are performing.
+
+  Get Started
+  
+  Shorten a link here...
+
+  Shorten It!
+
+  Advanced Statistics
+
+  Track how your links are performing across the web with our 
+  advanced statistics dashboard.
+
+  Brand Recognition
+
+  Boost your brand recognition with each click. Generic links don’t 
+  mean a thing. Branded links help instil confidence in your content.
+
+  Detailed Records
+
+  Gain insights into who is clicking your links. Knowing when and where 
+  people engage with your content helps inform better decisions.
+
+  Fully Customizable
+
+  Improve brand awareness and content discoverability through customizable 
+  links, supercharging audience engagement.
+
+  Boost your links today
+
+  Get Started
+
+  Features
+
+  Link Shortening
+  Branded Links
+  Analytics
+
+  Resources
+
+  Blog
+  Developers
+  Support
+
+  Company
+
+  About
+  Our Team
+  Careers
+  Contact
+   -->
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>

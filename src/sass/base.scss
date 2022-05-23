@@ -1,0 +1,120 @@
+:root {
+  //PRIMARY
+  --color-cyan: hsl(180, 66%, 49%);
+  --color-dark-violet: hsl(257, 27%, 26%);
+
+  //SECONDARY
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-red: hsl(0, 87%, 67%);
+  --color-grey: hsl(0, 0%, 75%);
+  --color--greyish-violet: hsl(257, 7%, 63%);
+  --color-dark-blue: hsl(255, 11%, 22%);
+  --color-dark-brown: hsl(260, 8%, 14%);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(248, 250, 251);
+}
+
+.section-1 {
+  border-top: 1px solid #ddd;
+
+  height: 110vh;
+  // background-color: orangered;
+}
+
+.section-2 {
+  background-color: rgb(248, 250, 251);
+  // padding: 15rem 13rem;
+  // padding-bottom: 20rem;
+
+  height: 130vh;
+  position: relative;
+  border-top: 1px solid #ddd;
+}
+
+.section-3 {
+  background-color: rgb(248, 250, 251);
+  height: 120vh;
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.section-4 {
+  height: 130vh;
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.section-5 {
+  // background-color: orangered;
+  // height: 100vh;
+  padding: 15rem 13rem;
+
+  border-top: 1px solid #ddd;
+  background-color: rgb(248, 250, 251);
+
+  // display: flex;
+}
+
+.section-6 {
+  background-color: var(--color-dark-violet);
+  position: relative;
+  height: 40vh;
+}
+
+.section-7 {
+  background-color: var(--color-dark-brown);
+  padding: 12rem 13rem;
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.header {
+  // background-color: orangered;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 70vh;
+}
+
+.default {
+  margin-left: 13rem;
+  margin-right: 13rem;
+  // padding: 0 13rem 13rem 15rem;
+}
+
+.modify {
+  color: hsl(180, 66%, 45%);
+  font-size: 7rem;
+  letter-spacing: -1px;
+}
+
+.padding {
+  padding-left: 1.3rem;
+  padding-top: 2rem;
+  padding-right: 1.3rem;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}

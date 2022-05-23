@@ -1,0 +1,15 @@
+.animate {
+  animation: moveFromTop 0.3s ease-in 0s;
+}
+
+@keyframes moveFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
