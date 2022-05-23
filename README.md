@@ -4,8 +4,8 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/AbdulRehmanConqueror/Ip-Address-Tracker)
-- Live Site URL: [live site URL](https://ipwatcher.netlify.app)
+- Solution URL: [solution URL](https://github.com/AbdulRehmanConqueror/Url-shortening)
+- Live Site URL: [live site URL](https://smarturlshorten.netlify.app)
 
 ### Built with
 

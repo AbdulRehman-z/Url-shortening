@@ -5,7 +5,10 @@ class scrollIntoView {
     this._navContainer.addEventListener("click", function (e) {
       e.preventDefault();
 
-      if (e.target.classList.contains("nav__link")) {
+      if (
+        e.target.classList.contains("nav__link") ||
+        e.target.classList.contains("cta-btn")
+      ) {
         const id = e.target.getAttribute("href");
         document.querySelector(`${id}`).scrollIntoView({ behavior: "smooth" });
       }
