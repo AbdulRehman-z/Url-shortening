@@ -14,7 +14,7 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 - Sass
 - Flexbox
 - MVC Architecture of Js
-- Publisher-Subscriber pattern of Js
+- Publisher-Subscriber pattern of JavaScript
 
 ### What I learned
 
